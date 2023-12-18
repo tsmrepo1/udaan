@@ -22,13 +22,13 @@
 /** The name of the database for WordPress */
 define('WP_CACHE', true);
 define( 'WPCACHEHOME', '/home6/thinksurfmedia/udaan.thinksurfmedia.in/php/wp-content/plugins/wp-super-cache/' );
-define( 'DB_NAME', 'thinksurfmedia_udan' );
+define( 'DB_NAME', '' );
 
 /** Database username */
-define( 'DB_USER', 'thinksurfmedia_udan' );
+define( 'DB_USER', '' );
 
 /** Database password */
-define( 'DB_PASSWORD', '^IGQY8F&WawC' );
+define( 'DB_PASSWORD', '' );
 
 /** Database hostname */
 define( 'DB_HOST', 'localhost' );

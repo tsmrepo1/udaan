@@ -1,0 +1,526 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.outer-main-wrap {
+  font-family: "Josefin Sans", sans-serif;
+  line-height: 1.6;
+  background-color: #f1fbff;
+  min-height: 100vh;
+}
+
+.outer-main-wrap::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url(../images/globe-img-removebg-preview.png);
+  background-size: 75%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-blend-mode: multiply;
+  opacity: 0.05;
+}
+
+.step-form-wrap .custom-container {
+  max-width: 800px;
+  margin-inline: auto;
+  position: relative;
+  padding-inline: 20px;
+}
+
+.step-form-wrap p {
+  margin: 0 0 16px 0;
+}
+
+.step-form-wrap .form__field {
+  position: relative;
+}
+
+.step-form-wrap .form__input {
+  padding: 12px 16px;
+  border: 1px solid #f1fbff;
+  border-radius: 12px;
+  margin-inline: auto;
+  display: block;
+  width: 100%;
+}
+
+.step-form-wrap .form__input:focus {
+  outline: 0;
+}
+
+.step-form-wrap .link--close {
+  font-size: 20px;
+  position: absolute;
+  right: 20px;
+  top: 0;
+}
+
+.step-form-wrap .link--close svg {
+    fill: #000;
+}
+
+.step-form-wrap .step-form-wrap__header {
+  padding-top: 60px;
+  padding-bottom: 40px;
+  position: sticky;
+  top: 0;
+  z-index: 1050;
+  transition: all 0.3s ease-in-out;
+}
+
+.step-form-wrap .step-form-wrap__body {
+    padding-bottom: 50px;
+}
+
+.step-form-wrap .step-form-wrap__header.step-form-wrap__header--shrinked {
+  background-color: #f1fbff;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 15px 0px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.step-form-wrap .step-form__progress {
+  display: flex;
+  gap: 4px;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+
+.step-form-wrap .step-form__progress li {
+  background-color: #c1d6df;
+  height: 6px;
+  flex-grow: 1;
+}
+
+.step-form-wrap .step-form__progress li.active {
+  background-color: #a4ce3a;
+}
+
+.step-form-wrap .step-form__output {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 8px;
+  row-gap: 4px;
+  margin-bottom: 16px;
+}
+
+.step-form-wrap .step-form__output li {
+  display: inline-block;
+}
+
+.step-form-wrap .step-form__output li a {
+  background-color: #fff;
+  padding: 6px 12px;
+  border: 1px solid #d2e4eb;
+  border-radius: 8px;
+  text-decoration: none;
+  display: inline-block;
+  line-height: 1.5;
+  color: #000;
+  font-size: 15px;
+}
+
+.step-form-wrap .step-form__output li:hover a {
+  background-color: #dfeff5;
+}
+
+.step-form-wrap fieldset {
+  border: 0;
+  display: none;
+}
+
+.step-form-wrap fieldset.active {
+  display: block;
+}
+
+.step-form-wrap fieldset h3,
+.step-form-wrap fieldset h4 {
+  color: #000;
+  text-align: center;
+}
+
+.step-form-wrap fieldset h3 {
+  font-size: 28px;
+  margin: 0 0 40px 0;
+}
+
+.step-form-wrap fieldset h4 {
+  font-size: 22px;
+  margin: 0 0 30px 0;
+}
+
+.step-form-wrap .vs-form .vs-form__field {
+  position: relative;
+}
+
+.step-form-wrap .vs-form .vs-form__field input {
+  font-size: 28px;
+  line-height: 1.5;
+  padding: 14px 12px 12px 70px;
+  border-radius: 16px;
+  box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 16px 0px;
+  border: 1px solid rgb(232, 234, 243);
+  width: 100%;
+  color: #000;
+  display: block;
+}
+
+.step-form-wrap .vs-form .vs-form__field input:focus {
+  outline: 0;
+}
+
+.step-form-wrap .vs-form .vs-form__field input::placeholder {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.step-form-wrap .vs-form .vs-form__field svg {
+  position: absolute;
+  top: 17px;
+  left: 20px;
+  width: 32px;
+  fill: rgba(0, 0, 0, 0.4);
+}
+
+.step-form-wrap .vs-form .vs-form__item-list {
+  margin-top: 40px;
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+.step-form-wrap .vs-form .vs-form__item-list li {
+  display: block;
+}
+
+.step-form-wrap .vs-form .vs-form__item-list li a {
+  display: block;
+  padding: 14px;
+  font-size: 22px;
+  color: #000;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 16px;
+  border: 1px solid transparent;
+}
+
+.step-form-wrap .vs-form .vs-form__item-list li:hover a {
+  border: 1px solid #a4ce3a;
+  background-color: #f7ffe2;
+}
+
+.step-form-wrap .custom-label-list li {
+  position: relative;
+  display: block;
+}
+
+.step-form-wrap .custom-label-list li input {
+  position: absolute;
+  visibility: hidden;
+}
+
+.step-form-wrap .custom-label-list li:hover label,
+.step-form-wrap .custom-label-list li input:checked ~ label {
+  border-color: #a4ce3a;
+  outline: 1px solid #a4ce3a;
+  background-color: #f7ffe2;
+}
+
+.step-form-wrap .custom-label-list li label {
+  display: block;
+  cursor: pointer;
+  margin-bottom: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.step-form-wrap .custom-label-list li:hover label {
+  transform: translateY(-5px);
+}
+
+.step-form-wrap .month-list {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.step-form-wrap .month-list li label {
+  background-color: #fff;
+  border-radius: 16px;
+  text-align: center;
+  padding: 40px 20px;
+  border: 1px solid #d2e4eb;
+}
+
+.step-form-wrap .month-list li label h5 {
+  font-size: 18px;
+  line-height: 1;
+  color: #000;
+  font-weight: 700;
+  margin-bottom: 8px;
+  text-transform: capitalize;
+}
+
+.step-form-wrap .month-list li label .badge {
+  margin: 0 0 12px 0;
+  color: #888888;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 1.3;
+}
+
+.step-form-wrap .month-list li label .badge.badge--pick {
+  color: #fff;
+  background-color: #a4ce3a;
+  padding-top: 5px;
+}
+
+.step-form-wrap .month-list li label p {
+  line-height: 1;
+  color: #555;
+  margin-bottom: 0;
+}
+
+.step-form-wrap .date-input-field {
+  margin-top: 40px;
+}
+
+.step-form-wrap .date-input-field .form__input {
+  width: min(100%, 256px);
+}
+
+.step-form-wrap .duration-list {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.step-form-wrap .duration-list li label {
+  background-color: #fff;
+  border-radius: 16px;
+  padding: 36px 20px;
+  text-align: center;
+  border: 1px solid #d2e4eb;
+}
+
+.step-form-wrap .duration-list li label img {
+  border-radius: 50%;
+  max-width: 96px;
+}
+
+.step-form-wrap .duration-list li label h5 {
+  margin-bottom: 0;
+  line-height: 1;
+  margin-top: 48px;
+  font-size: 18px;
+}
+
+.step-form-wrap .duration-list li label .recommended-badge {
+  font-size: 12px;
+  display: inline-block;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  text-transform: uppercase;
+  background-color: #a4ce3a;
+  color: #fff;
+  padding: 2px 4px;
+  border-radius: 8px;
+}
+
+.step-form-wrap fieldset:last-child .form__field {
+  margin-bottom: 20px;
+}
+
+.step-form-wrap [type="submit"] {
+  padding: 16px 30px;
+  border-radius: 60px;
+  color: #fff;
+  background-color: #a4ce3a;
+  line-height: 1;
+  border: 0;
+}
+
+.step-form-wrap [type="submit"]:hover {
+  background-color: #88af23;
+}
+
+.step-form-wrap .submit-container {
+  text-align: right;
+}
+
+.step-form-wrap .packages-listing h4 {
+  margin-block: 30px;
+}
+
+.step-form-wrap .packages-listing .row {
+  --bs-gutter-x: 8px;
+}
+
+.step-form-wrap .packages-listing label {
+  background-color: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  text-align: center;
+  border: 1px solid #d2e4eb;
+}
+
+.step-form-wrap .packages-listing label figure {
+  aspect-ratio: 18/13;
+  margin-bottom: 0;
+}
+
+.step-form-wrap .packages-listing label figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  max-width: 100%;
+}
+
+.step-form-wrap .packages-listing label div {
+  padding: 20px 16px;
+}
+
+.step-form-wrap .packages-listing label h5 {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 20px;
+  text-overflow: ellipsis;
+
+  /* Needed to make it work */
+  overflow: hidden;
+  white-space: nowrap;
+  margin-bottom: 8px;
+}
+
+.step-form-wrap .packages-listing label p.desc {
+  font-size: 13px;
+  color: #888;
+  width: 100%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  margin-bottom: 8px;
+}
+
+.step-form-wrap .packages-listing label p.price-status {
+  font-size: 11px;
+  font-weight: 700;
+  color: #cca129;
+  text-transform: uppercase;
+}
+
+.step-form-wrap .packages-listing label ul {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 3px;
+  row-gap: 2px;
+  justify-content: center;
+}
+
+.step-form-wrap .packages-listing label ul li {
+  font-size: 12px;
+  border-radius: 20px;
+  padding: 4px 6px;
+  line-height: 16px;
+  text-align: center;
+  background-color: #f1fbff;
+}
+
+.step-form-wrap .packages-listing .custom-label-list {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+}
+
+@media (max-width: 767.98px) {
+    .outer-main-wrap::before {
+        background-size: cover;
+    }
+
+    .step-form-wrap fieldset h3 {
+        font-size: 20px;
+        margin: 0 0 24px 0;
+    }
+
+    .step-form-wrap .step-form__output {
+        column-gap: 6px;
+    }
+
+    .step-form-wrap .step-form__output li a {
+        font-size: 13px;
+    }
+
+    .step-form-wrap .vs-form .vs-form__field input {
+        font-size: 18px;
+    }
+
+    .step-form-wrap .vs-form .vs-form__field svg {
+        top: 14px;
+    }
+
+    .step-form-wrap .vs-form .vs-form__field svg {
+        width: 24px;
+    }
+
+    .step-form-wrap .vs-form .vs-form__field input {
+        padding: 14px 12px 12px 56px;
+    }
+
+    .step-form-wrap .vs-form .vs-form__item-list li a {
+        padding: 10px 12px;
+        font-size: 18px;
+    }
+
+    .step-form-wrap fieldset h4 {
+        font-size: 18px;
+        margin: 0 0 28px 0;
+    }
+
+    .step-form-wrap .month-list {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .step-form-wrap .month-list li label h5 {
+        font-size: 17px;
+    }
+
+    .step-form-wrap .duration-list {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .step-form-wrap .duration-list li label h5 {
+        margin-top: 28px;
+        font-size: 16px;
+    }
+
+    .step-form-wrap .packages-listing .custom-label-list {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .step-form-wrap .packages-listing label h5 {
+        font-size: 15px;
+    }
+}
